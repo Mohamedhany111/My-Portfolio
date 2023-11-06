@@ -1,0 +1,425 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.3s;   
+}
+:root{
+--main-color:#7970b6;
+--second-color:#1b233d;
+--third-color:#fff;
+--four-color:#ff55a3;
+
+}
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+body{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.3s all linear;
+    overflow-x: hidden;
+background-color:var(--second-color);
+transition: 0.5s all ease-in-out;
+
+}
+.body.active{
+    background-color: var(--third-color);
+} 
+
+body .rocket{
+    position: fixed;
+    width: 48px;
+    bottom: 10px;
+    right: 25px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align:center;
+    background-color:var(--second-color);
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    z-index: 7;
+    color: var(--four-color);
+}
+@keyframes rocket {
+    50%{
+        transform: translateY(-20px);
+    }
+}
+body .rocket.show{
+    right: -100px;
+
+}
+/* start navbar */
+.navbar{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow: -30px 0 0 0 gray;
+    width: 100%;
+    z-index: 20;
+
+}
+.navbar img{
+    width:120px;
+    color: var(--main-color);
+}
+.navbar .container .h2{
+    color:var(--four-color);
+    font-size: 50px;
+}
+
+.navbar .container .h2:hover{
+    color: var(--four-color);
+}
+.navbar .container .nav-item{
+    margin-left: 30px;
+}
+
+.navbar .container .nav-item a{
+    color: var(--main-color);
+    font-size: 20px;
+}
+.navbar .container .nav-item a:hover{
+    color: var(--four-color);
+}
+.navbar-toggler {
+    border: 2px solid var(--third-color);
+}
+.navbar-toggler i{
+    color: var(--main-color);
+    padding: 15px;
+}
+
+.dark{
+    background-color: var(--second-color);
+    color: var(--four-color);
+    padding: 20px;
+    transition: 0.5s all ease-in-out;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+/* end navbar */
+/* start home */
+.home{
+
+    margin-bottom: 80px;
+
+    
+}
+.col-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.home .col-1 .section-text1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.home .col-1 .section-text1 .h2{
+    /* font-size: 70px; */
+    color: var(--main-color);
+   
+    font-size: 65px;
+    font-weight: bold;
+}
+.home .col-1 .section-text1 .wave{
+    font-size: 30px;
+    padding-left: 10px;
+}
+.home .col-1 .section-text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .col-1 .section-text2 .h1{
+    color: var(--four-color);
+    font-size: 45px;
+}
+@media (max-width:500px) {
+    .home .col-1 .section-text1 .h2{
+        font-size: 40px;
+    }
+    .home .col-1 .section-text2 .h1{
+        font-size: 25px;
+    }
+    .section-text3 span{
+        font-size: 15px;
+    }
+}
+.home .col-1 .section-text2 .wave-face{
+    font-size: 30px;
+    padding-left: 10px;
+}
+.section-text3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-text3 span{
+font-size: 30px;
+color: var(--main-color);
+}
+.section-text4{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.section-text4 a{
+    padding-left: 40px;
+    text-align: center;
+    height: 48px;
+    padding-top: 30px;
+}
+.section-text4 a .btn{
+    background-color: var(--main-color);
+    padding: 30px;
+    color: var(--third-color);
+    border-radius: 24px;
+ 
+    font-size: 20px;
+}
+
+.home .section-col2 {
+    padding-top: 120px;
+}
+.home .section-col2 .cover1{
+    width: 400px;
+    right: 50%;
+    top: 20%;
+    left: 30%;
+    border-radius: 50%;
+    border: 5px solid var(--third-color);
+    outline: 5px solid var(--third-color);
+    transition: 0.5s all ease-in-out;
+}
+@keyframes cover {
+        50%{
+            transform: translatey(-5%);
+        }
+}
+/* end cover */
+/* start section 2 */
+.section2{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.section2 .section2-about{
+    margin-bottom: 80px;
+}
+.section2 .section2-about h2{
+color:var(--main-color);
+font-weight: bold;
+font-size: 50px;
+}
+.section2 .section2-about p{
+    color: var(--four-color);
+    font-size: 30px;
+}
+.section2 .section2-col2{
+     margin-top: 40px;
+}
+.section2 .section2-col1 img{
+    width: 800px;
+    height:700px;
+}
+.section2 .section2-col2 p{
+    color:var(--main-color);
+}
+.section2 .section2-text h2{
+    color: var(--main-color);
+    font-weight: bold;
+    padding-top: 40px;
+    font-size: 40px;
+}
+.section2 .section2-text li{
+    color: var(--four-color);
+    list-style: none;
+    font-size:20px;
+    padding-bottom: 20px;
+}
+.section2 .section2-text li i{
+    padding-right: 20px;
+}
+.section2 .section2-btn a{
+    padding-left: 50px;
+}
+.section2 .section2-btn a .btn{
+    color: var(--third-color);
+    background-color: var(--four-color);
+    height: 72px;
+    font-size: 20px;
+    border-radius: 48px;
+}
+.section2 .section2-btn a .cv{
+background-color: var(--main-color);
+}
+/* end section2 */
+/* start section3 */
+.section3{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.section3 .screen-heading span{
+    color: var(--main-color);
+    font-size: 50px;
+}
+.section3 .card .emoje{
+    text-align: center;
+    font-size: 80px;
+    
+}
+.section3 .screen-heading p{
+    font-size: 30px;
+    color: var(--four-color);
+}
+.section3 .screen-heading .h3{
+    color: var(--main-color);
+}
+.card{
+    border: 8px solid var(--main-color);
+    transition: 0.5s all ease-in-out;
+    margin-top: 70px;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.section3  .card-title{
+    color: var(--four-color);
+    font-size: 30px;
+}
+.section3 .card-text{
+    color: var(--main-color);
+}
+/* end section3 */
+/* start section4 */
+.section4{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.section4 .myTools .fire{
+    font-size: 50px;
+    color: var(--main-color);
+}
+.section4 .tools{
+    font-size: 30px;
+    color: var(--four-color);
+}
+.section4 p{
+    font-size: 30px;
+    color: var(--main-color);
+}
+.section4  img{
+    width:50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.section4 .progress{
+    position: relative;
+    width: 400px;
+    height: 30px;
+    background-color: var(--third-color);
+    margin: 10px;
+}
+.section4 .progress span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--four-color);
+    transition: 0.5s all ease-in-out;
+}
+.section4 .section4-col2 img{
+
+}
+/* end section4 */
+/* start section5  */
+.section5{
+    margin-top:80px;
+    margin-bottom:80px;
+
+}
+.section5 .Portfolio{
+    font-size: 50px;
+color: var(--main-color);
+    font-weight: bold;
+}
+.portfolio-tool{
+    font-size: 30px;
+    color: var(--four-color);
+}
+.section5 .card .card-body .card-title{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--four-color);
+}
+/* end section5 */
+/* start section6 */
+.section6{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.section6 .row a {
+    padding-right: 30px;
+}
+.section6 .container .contactUS {
+    margin-bottom: 70px;
+}
+.section6 .container .contactUS span{
+    font-size: 50px;
+    font-weight: bold;
+   color: var(--main-color);
+}
+.section6 .container .contactUS h2{
+    font-size:30px;
+    color: var(--four-color);
+}
+
+.section6 .contactUs{
+ margin:40px
+
+}
+.section6 .row{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.section6 .row a img{
+    width: 56px;
+}
+.section6 .row .h2{
+    padding-top: 30px;
+    color: var(--four-color);
+}
+.section6-text{
+    padding-bottom: 20px;
+    color: var(--main-color);
+}
+.section6 .row .email{
+    font-size: 24px;
+    color: var(--four-color);
+}
+.section6 label{
+    color: var(--main-color);
+}
+.section6 .btn{
+    background-color: var(--main-color);
+    border: 1px solid var(--four-color);
+}
+/* end section6 */
